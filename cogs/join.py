@@ -12,11 +12,11 @@ class join_leave(commands.Cog):
 		if member.bot:
 			botchannel = self.bot.get_channel(704797031922663435)
 			await botchannel.send('')
-		else:	
-			e = discord.Embed(title = 'New Member!', color = 0xffff00)
-			e.add_field(f'Member Name: {member.name}')
-			e.set_icon
-			await channel.send()
+		# else:	
+		# 	e = discord.Embed(title = 'New Member!', color = 0xffff00)
+		# 	e.add_field(f'Member Name: {member.name}')
+		# 	e.set_icon
+		# 	await channel.send()
 
 def setup(bot):
 	bot.add_cog(join_leave(bot))

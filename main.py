@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import os
-import keep_alive
 import random
 bot = commands.Bot(command_prefix=['y/', 'y.', '<@!757034804548993134> ', 'yeet '])
 token = os.environ.get('token')
@@ -41,5 +40,4 @@ async def reload(ctx, extension):
     await ctx.send(f'Reloaded {extension}')
 
 
-keep_alive.keep_alive()
 bot.run(token)
