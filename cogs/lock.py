@@ -24,7 +24,7 @@ class lockdown(commands.Cog):
 		channels = ctx.guild.text_channels		
 		for x in channels:
 			if'🦢・' in str(x):
-                await x.set_permissions(online_role, send_messages=True, read_messages=True, create_instant_invite=True, embed_links=True, attach_files=True, read_message_history=True, use_external_emojis=True, add_reactions=True)#pls stop#uut ok
+				await x.set_permissions(online_role, send_messages=True, read_messages=True, create_instant_invite=True, embed_links=True, attach_files=True, read_message_history=True, use_external_emojis=True, add_reactions=True)#pls stop#uut ok
 				
 		await ctx.send('Un-Locked!')
 
