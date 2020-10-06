@@ -9,6 +9,8 @@ class suggest(commands.Cog):
 
     @commands.command()
     async def suggest(self, ctx):
+
+        
         MSGe = await ctx.send('What image do you want to suggest')
 
         def check(m):
